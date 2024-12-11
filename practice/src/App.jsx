@@ -5,7 +5,7 @@ export default function App() {
 
     return (
             <div className='App'>
-                <Accordian/>
+                <Accordian />
             </div>
     )
 }

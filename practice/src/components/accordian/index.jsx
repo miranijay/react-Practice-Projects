@@ -27,7 +27,6 @@ export default function Accordian() {
         }
 
         setMultiple(cpyMultiple)
-        console.log(cpyMultiple);
 
     }
 
