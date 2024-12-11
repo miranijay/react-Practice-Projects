@@ -4,11 +4,9 @@ import Accordian  from './components/accordian/index.jsx'
 export default function App() {
 
     return (
-        <>
-            <div>
+            <div className='App'>
                 <Accordian/>
             </div>
-        </>
     )
 }
 
