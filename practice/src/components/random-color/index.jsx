@@ -7,12 +7,14 @@ export default function Randomcolor() {
 
     function handleRandomHexColor () {
 
+        const hex = []
+
     }
 
     function handleRandomrgbColor () {
 
     }
-    
+
 
     return (
         <div className="container" style={{
