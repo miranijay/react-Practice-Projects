@@ -3,7 +3,7 @@ import { useState } from "react"
 export default function Randomcolor() {
 
     const [typeColor, settypeColor] = useState("hex")
-    const [color, setcolo] = useState("#000000")
+    const [color, setcolor] = useState("#000000")
 
     function handleRandomHexColor () {
 
@@ -14,7 +14,6 @@ export default function Randomcolor() {
     function handleRandomrgbColor () {
 
     }
-
 
     return (
         <div className="container" style={{

@@ -10,7 +10,6 @@ export default function Accordian() {
 
     const [Multiple, setMultiple] = useState([]) // store Multiple IDs
 
-
     function handleSingleSelection(currId) {
         setselected(currId === selected ? null : currId)
     }
@@ -27,13 +26,12 @@ export default function Accordian() {
         }
 
         setMultiple(cpyMultiple)
-
     }
 
     return (
         <>
             <div className="wrapper">
-                <button onClick={() => setenableMulti(!enableMulti)}>Enable Multi Selection</button>
+                <button onClick={() => setenableMulti(!enableMulti)}>{enableMulti ? "Disable Multi Selection" : "Enable Multi Selection"}</button>
                 <div className="accordian">
                     {
                         data && data.length > 0 ?
