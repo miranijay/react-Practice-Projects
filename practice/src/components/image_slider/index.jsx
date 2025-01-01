@@ -41,9 +41,6 @@ export default function ImageSlider({url, page, limit }) {
         }
     },[url])
 
-    console.log(images);
-    
-
     if(loading) {
         return <h1>Loading...</h1>
     }
