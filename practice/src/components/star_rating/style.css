@@ -1,0 +1,14 @@
+.active {
+    color: #fff700;
+}
+  
+.inactive {
+    color: #000000;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}

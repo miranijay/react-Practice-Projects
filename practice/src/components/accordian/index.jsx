@@ -30,6 +30,12 @@ export default function Accordian() {
 
     return (
         <>
+            <h1 style={{
+                textAlign: "center",
+                padding: "20px"
+                }}>
+                    Accordian
+            </h1>
             <div className="wrapper">
                 <button onClick={() => setenableMulti(!enableMulti)}>{enableMulti ? "Disable Multi Selection" : "Enable Multi Selection"}</button>
                 <div className="accordian">
