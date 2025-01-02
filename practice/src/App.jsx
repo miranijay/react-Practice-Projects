@@ -3,6 +3,8 @@ import Accordian  from './components/accordian/index.jsx'
 import Randomcolor from './components/random-color/index.jsx'
 import StarRating from './components/star_rating/index.jsx'
 import ImageSlider from './components/image_slider/index.jsx'
+import LoadMoreData from './components/load-more-data/index.jsx'
+import TreeView from './components/tree_view/index.jsx'
 
 export default function App() {
 
@@ -21,7 +23,9 @@ export default function App() {
                     limit={"10"}
                 />
 
+                <LoadMoreData />
 
+                <TreeView />
             </div>
     )
 }
