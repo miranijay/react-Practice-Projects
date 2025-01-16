@@ -9,7 +9,7 @@ export default function TreeView({menus =[]}) {
                     textAlign: 'center',
                     marginTop: '100px'
                 }}>
-                    Tree View
+                    Tree-View
                 </h1>
             </div>
         </>
