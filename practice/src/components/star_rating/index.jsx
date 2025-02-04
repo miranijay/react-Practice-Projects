@@ -8,17 +8,14 @@ export default function StarRating({stars = 5}) {
     const [hover, sethover] = useState(0)
 
     function handleclick(currindex) {           // getting current index on which user clicked
-
         setRating(currindex)
     }
 
     function handleMouseEnter(currindex) {      // getting current index on which user hover
-    
         sethover(currindex)
     }
 
     function handleMouseLeave() {               //  when user leave the hover
-    
         sethover(rating)
     }
 
