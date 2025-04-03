@@ -1,13 +1,11 @@
 import { useState } from "react"
-import data from "./data.jsx"
+import data from "./data.js"
 import "./index.css"
 
 export default function Accordian() {
 
     const [selected, setselected] = useState("")  // single selection , Multiple selection
-
     const [enableMulti, setenableMulti] = useState(false) // Enable Multi Selection
-
     const [Multiple, setMultiple] = useState([]) // store Multiple IDs
 
     function handleSingleSelection(currId) {
@@ -32,7 +30,7 @@ export default function Accordian() {
         <>
             <h1 style={{
                 textAlign: "center",
-                padding: "20px"
+                padding: "10px"
                 }}>
                     Accordian
             </h1>
@@ -43,10 +41,13 @@ export default function Accordian() {
                         data && data.length > 0 ?
                             data.map((dataitem) => (
                                 <div key={dataitem.id} className="item">
-                                    <div onClick={
-                                        enableMulti
-                                            ? () => handleMultiSelection(dataitem.id)
-                                            : () => handleSingleSelection(dataitem.id)} className="title">
+                                    <div className="title"
+                                        onClick={
+                                            enableMulti
+                                                ? () => handleMultiSelection(dataitem.id)
+                                                : () => handleSingleSelection(dataitem.id)
+                                        }
+                                    >
                                         <h3>{dataitem.question}</h3>
                                         <span>+</span>
                                     </div>
